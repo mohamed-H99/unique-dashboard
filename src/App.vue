@@ -91,9 +91,4 @@ export default {
     }
   }
 }
-@media (max-width: 576px) {
-  #app {
-    display: none;
-  }
-}
 </style>
