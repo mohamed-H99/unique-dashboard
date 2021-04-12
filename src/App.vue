@@ -21,7 +21,7 @@ export default {
   components: {
     Sidebar,
     TopNav,
-    BottomFooter
+    BottomFooter,
   },
   data() {
     return {};
@@ -30,19 +30,19 @@ export default {
     const sidebar = document.getElementById("sidebar");
     const topnav = document.getElementById("top-nav");
     const content = document.querySelector("#app");
-    if(window.innerWidth <= 768) {
-      sidebar.classList.add('minimized')
-      topnav.classList.add('expanded');
-      content.classList.add('expanded');
+    if (window.innerWidth <= 768) {
+      sidebar.classList.add("minimized");
+      topnav.classList.add("expanded");
+      content.classList.add("expanded");
     }
-  }
+  },
 };
 </script>
 
 <style lang="scss">
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap");
 :root {
-  --main-font: "Cairo", sans-serif;
+  --main-font: "Cairo", "Roboto", sans-serif;
   --transit: 0.3s;
   --grey-color: #e1e5eb;
   --light-color: #f4f5f7;
