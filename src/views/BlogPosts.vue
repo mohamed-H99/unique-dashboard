@@ -64,7 +64,7 @@ export default {
       blogDataV1: [
         {
           id: 0,
-          // img: "http://lorempixel.com/g/200/200/city",
+          img: "http://lorempixel.com/g/200/200/city",
           category: "TRAVEL",
           avatar: "",
           title: "Off tears are day blind smile alone had ready",
@@ -74,7 +74,7 @@ export default {
         },
         {
           id: 2,
-          // img: "http://lorempixel.com/g/200/200/business",
+          img: "http://lorempixel.com/g/200/200/business",
           category: "BUSINESS",
           avatar: "",
           title: "It so numerous if he may outlived disposal",
@@ -84,7 +84,7 @@ export default {
         },
         {
           id: 1,
-          // img: "http://lorempixel.com/g/200/200/technics",
+          img: "http://lorempixel.com/g/200/200/technics",
           category: "TECHNOLOGY",
           avatar: "",
           title: "Difficult in delivered extensive at direction",
@@ -94,7 +94,7 @@ export default {
         },
         {
           id: 3,
-          // img: "http://lorempixel.com/g/200/200/business",
+          img: "http://lorempixel.com/g/200/200/business",
           category: "BUSINESS",
           avatar: "",
           title: "Conduct at an replied removal an amongst",
@@ -106,7 +106,7 @@ export default {
       blogDataV2: [
         {
           id: 4,
-          // img: "http://lorempixel.com/g/200/200/city",
+          img: "http://lorempixel.com/g/200/200/city",
           category: "TRAVEL",
           avatar: "",
           title:
@@ -117,7 +117,7 @@ export default {
         },
         {
           id: 5,
-          // img: "http://lorempixel.com/g/200/200/business",
+          img: "http://lorempixel.com/g/200/200/business",
           category: "BUSINESS",
           avatar: "",
           title:
