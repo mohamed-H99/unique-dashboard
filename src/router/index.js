@@ -7,18 +7,18 @@ import BlogDashboard from "../views/BlogDashboard";
 
 Vue.use(VueRouter);
 
-const BlogPosts = import(
-  /* webpackChunkName: "blog-posts" */ "../views/BlogPosts"
-);
-const Components = import(
-  /* webpackChunkName: "components" */ "../views/Components"
-);
-const NewPost = import(/* webpackChunkName: "new-post" */ "../views/NewPost");
-const Tables = import(/* webpackChunkName: "tables" */ "../views/Tables");
-const UserProfile = import(
-  /* webpackChunkName: "profile" */ "../views/UserProfile"
-);
-const Errors = import(/* webpackChunkName: "errors" */ "../views/Errors");
+const BlogPosts = () =>
+  import(/* webpackChunkName: "blog-posts" */ "../views/BlogPosts.vue");
+const Components = () =>
+  import(/* webpackChunkName: "components" */ "../views/Components.vue");
+const NewPost = () =>
+  import(/* webpackChunkName: "new-post" */ "../views/NewPost.vue");
+const Tables = () =>
+  import(/* webpackChunkName: "tables" */ "../views/Tables.vue");
+const UserProfile = () =>
+  import(/* webpackChunkName: "profile" */ "../views/UserProfile.vue");
+const Errors = () =>
+  import(/* webpackChunkName: "errors" */ "../views/Errors.vue");
 
 const routes = [
   { path: "/", name: "BlogDashboard", component: BlogDashboard },

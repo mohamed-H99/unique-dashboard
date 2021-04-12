@@ -1,6 +1,6 @@
 <template>
   <section id="new-post">
-    <div class="section-heading">
+    <div class="section-heading container-fluid">
       <p>Blog Posts</p>
       <h2>Add New Post</h2>
     </div>
@@ -118,7 +118,7 @@ import { VueEditor } from "vue2-editor";
 export default {
   name: "NewPost",
   components: {
-    VueEditor
+    VueEditor,
   },
   created() {
     window.scrollTo(0, 0);
@@ -127,13 +127,13 @@ export default {
     return {
       newCategory: null,
       selected: this.$store.getters.getSelected,
-      content: {}
+      content: {},
     };
   },
   computed: {
     categories() {
       return this.$store.getters.getCategories;
-    }
+    },
   },
   methods: {
     addCategory() {
@@ -147,11 +147,11 @@ export default {
     saveContent() {
       let editorContent = {
         title: this.content.title.trim(),
-        content: this.content.text
+        content: this.content.text,
       };
       this.$store.dispatch("updateContent", editorContent);
-    }
-  }
+    },
+  },
 };
 </script>
 

@@ -18,16 +18,15 @@
           <a class="nav-link" href="#">Blog</a>
         </li>
       </ul>
-      <p class="footer-line">
-        Copyright &copy; 2021 ahmedhashem
-      </p>
+      <p class="footer-line">Copyright &copy; 2021 ahmedhashem</p>
     </div>
   </footer>
 </template>
 
 <script>
+/* eslint-disable */
 export default {
-  name: "BottomFooter"
+  name: "BottomFooter",
 };
 </script>
 
@@ -46,6 +45,12 @@ export default {
     margin-bottom: 0;
     opacity: 0.4;
     font-weight: 700;
+  }
+}
+
+@media (max-width: 768px) {
+  #bottom-footer .container-fluid {
+    flex-direction: column;
   }
 }
 </style>

@@ -43,7 +43,7 @@ export default {
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap");
 :root {
   --main-font: "Cairo", "Roboto", sans-serif;
-  --transit: 0.3s;
+  --transit: 0.2s;
   --grey-color: #e1e5eb;
   --light-color: #f4f5f7;
   --main-color: #007bff;
@@ -67,7 +67,7 @@ export default {
     border-radius: 99rem;
   }
   .section-heading {
-    margin-bottom: 2rem;
+    margin: 2rem 0;
     p {
       text-transform: uppercase;
       font-size: 0.8rem;
@@ -88,6 +88,17 @@ export default {
       > * {
         font-weight: 700;
       }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --page-pad: 1rem 0;
+  }
+  #app {
+    &.expanded {
+      padding-left: 0;
     }
   }
 }

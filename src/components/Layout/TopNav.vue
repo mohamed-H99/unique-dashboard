@@ -98,25 +98,23 @@ export default {
   },
   mounted() {
     let notifiText = document.querySelectorAll(".notifi-content .notifi-text");
-    console.log(notifiText);
-    notifiText.forEach(text => {
+    notifiText.forEach((text) => {
       text.textContent = text.textContent.slice(0, 35) + "...";
     });
   },
   methods: {
     toggleSidebar() {
-      console.log(window.innerWidth)
       if (window.innerWidth <= 768) {
-        document.getElementById('sidebar').classList.toggle('minimized');
-        document.getElementById('app').classList.add('expanded');
-        document.getElementById('top-nav').classList.add('expanded');
+        document.getElementById("sidebar").classList.toggle("minimized");
+        document.getElementById("app").classList.add("expanded");
+        document.getElementById("top-nav").classList.add("expanded");
       } else {
-        document.getElementById('sidebar').classList.toggle('minimized');
-        document.getElementById('app').classList.toggle('expanded');
-        document.getElementById('top-nav').classList.toggle('expanded');
+        document.getElementById("sidebar").classList.toggle("minimized");
+        document.getElementById("app").classList.toggle("expanded");
+        document.getElementById("top-nav").classList.toggle("expanded");
       }
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -135,6 +133,7 @@ export default {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    width: 100%;
   }
   .nav-item {
     a {
@@ -218,7 +217,7 @@ export default {
         }
       }
     }
-    &#user-item{
+    &#user-item {
       .btn {
         display: flex;
         justify-content: center;
@@ -280,10 +279,12 @@ export default {
 #top-nav.expanded {
   left: 70px;
 }
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   #top-nav {
+    &.expanded {
+      left: 0;
+    }
     > *:last-child {
-      width: 100%;
       justify-content: flex-end;
     }
   }

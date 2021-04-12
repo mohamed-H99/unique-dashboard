@@ -1,6 +1,6 @@
 <template>
   <section id="user-profile">
-    <div class="section-heading">
+    <div class="section-heading container-fluid">
       <p>Overview</p>
       <h2>User Profile</h2>
     </div>
@@ -165,7 +165,7 @@
                 </b-form-group>
               </div>
             </div>
-            <button type="submit" class="btn btn-primary ">
+            <button type="submit" class="btn btn-primary">
               <v-icon name="user-edit"></v-icon> Update Account
             </button>
           </b-form>
@@ -186,14 +186,14 @@ export default {
       percentage: 74,
       form: {},
       selected: null,
-      options: [{ value: null, text: "Please select an option" }]
+      options: [{ value: null, text: "Please select an option" }],
     };
   },
   methods: {
     onSubmit() {
       return 0;
-    }
-  }
+    },
+  },
 };
 </script>
 

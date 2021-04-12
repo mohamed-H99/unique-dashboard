@@ -1,7 +1,7 @@
 <template>
   <section id="blog-posts">
     <div class="container-fluid">
-      <div class="section-heading">
+      <div class="section-heading container-fluid">
         <p>Components</p>
         <h2>Blog Posts</h2>
       </div>
@@ -54,7 +54,7 @@ export default {
   components: {
     BlogCardV1,
     BlogCardV2,
-    BlogCardV3
+    BlogCardV3,
   },
   created() {
     window.scrollTo(0, 0);
@@ -64,68 +64,68 @@ export default {
       blogDataV1: [
         {
           id: 0,
-          img: "http://lorempixel.com/g/200/200/city",
+          // img: "http://lorempixel.com/g/200/200/city",
           category: "TRAVEL",
           avatar: "",
           title: "Off tears are day blind smile alone had ready",
           text:
             "Is at purse tried jokes china ready decay an. Small its shy way had woody downs power. To denoting admitted speaking learning my...",
-          date: "29 February 2019"
+          date: "29 February 2019",
         },
         {
           id: 2,
-          img: "http://lorempixel.com/g/200/200/business",
+          // img: "http://lorempixel.com/g/200/200/business",
           category: "BUSINESS",
           avatar: "",
           title: "It so numerous if he may outlived disposal",
           text:
             "How but sons mrs lady when. Her especially are unpleasant out alteration continuing unreserved ready road market resolution...",
-          date: "29 February 2019"
+          date: "29 February 2019",
         },
         {
           id: 1,
-          img: "http://lorempixel.com/g/200/200/technics",
+          // img: "http://lorempixel.com/g/200/200/technics",
           category: "TECHNOLOGY",
           avatar: "",
           title: "Difficult in delivered extensive at direction",
           text:
             "Is at purse tried jokes china ready decay an. Small its shy way had woody downs power. To denoting admitted speaking learning my...",
-          date: "29 February 2019"
+          date: "29 February 2019",
         },
         {
           id: 3,
-          img: "http://lorempixel.com/g/200/200/business",
+          // img: "http://lorempixel.com/g/200/200/business",
           category: "BUSINESS",
           avatar: "",
           title: "Conduct at an replied removal an amongst",
           text:
             "However venture pursuit he am mr cordial. Forming musical am hearing studied be luckily. But in for determine what would see...",
-          date: "28 February 2019"
-        }
+          date: "28 February 2019",
+        },
       ],
       blogDataV2: [
         {
           id: 4,
-          img: "http://lorempixel.com/g/200/200/city",
+          // img: "http://lorempixel.com/g/200/200/city",
           category: "TRAVEL",
           avatar: "",
           title:
             "Attention he extremity unwilling on otherwise cars backwards yet",
           text:
             "Is at purse tried jokes china ready decay an. Small its shy way had woody downs power. To denoting admitted speaking learning my...",
-          date: "29 February 2019"
+          date: "29 February 2019",
         },
         {
           id: 5,
-          img: "http://lorempixel.com/g/200/200/business",
+          // img: "http://lorempixel.com/g/200/200/business",
           category: "BUSINESS",
           avatar: "",
           title:
             "Totally words widow one downs few age every seven if miss part by fact",
           text:
             "Discovered had get considered projection who favourable. Necessary up knowledge it tolerably. Unwilling departure education to admitted speaking...",
-          date: "28 February 2019"
-        }
+          date: "28 February 2019",
+        },
       ],
       blogDataV3: [
         {
@@ -136,7 +136,7 @@ export default {
             "Totally words widow one downs few age every seven if miss part by fact",
           text:
             "Discovered had get considered projection who favourable. Necessary up knowledge it tolerably. Unwilling departure education to admitted speaking...",
-          date: "28 February 2019"
+          date: "28 February 2019",
         },
         {
           id: 7,
@@ -145,7 +145,7 @@ export default {
           title: "Husbands ask repeated resolved but laughter debating",
           text:
             "It abode words began enjoy years no do ﻿no. Tried spoil as heart visit blush or. Boy possible blessing sensible set but margaret interest. Off tears...",
-          date: "28 February 2019"
+          date: "28 February 2019",
         },
         {
           id: 8,
@@ -155,11 +155,11 @@ export default {
             "Instantly gentleman contained belonging exquisite now direction",
           text:
             "West room at sent if year. Numerous indulged distance old law you. Total state as merit court green decay he. Steepest merit checking railway...",
-          date: "29 February 2019"
-        }
-      ]
+          date: "29 February 2019",
+        },
+      ],
     };
-  }
+  },
 };
 </script>
 

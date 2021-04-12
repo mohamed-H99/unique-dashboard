@@ -1,6 +1,6 @@
 <template>
   <section id="tables">
-    <div class="section-heading">
+    <div class="section-heading container-fluid">
       <p>Overview</p>
       <h2>Data Tables</h2>
     </div>
@@ -24,9 +24,6 @@
 <script>
 export default {
   name: "Tables",
-  created() {
-    window.scrollTo(0, 0);
-  },
   data() {
     return {
       items: [
@@ -36,7 +33,7 @@ export default {
           last_name: "Macdonald",
           country: "Russian Federation",
           city: "Gdańsk",
-          phone: "107-0339"
+          phone: "107-0339",
         },
         {
           "#": 1,
@@ -44,7 +41,7 @@ export default {
           last_name: "Colt",
           country: "Estonia",
           city: "Borghetto di Vara",
-          phone: "1-660-850-1647"
+          phone: "1-660-850-1647",
         },
         {
           "#": 2,
@@ -52,7 +49,7 @@ export default {
           last_name: "Nathan",
           country: "Cyprus",
           city: "Braunau am Inn",
-          phone: "214-4225"
+          phone: "214-4225",
         },
         {
           "#": 3,
@@ -60,11 +57,14 @@ export default {
           last_name: "Angela",
           country: "Liberia",
           city: "Bad Hersfeld",
-          phone: "1-848-473-7416"
-        }
-      ]
+          phone: "1-848-473-7416",
+        },
+      ],
     };
-  }
+  },
+  mounted() {
+    window.scrollTo(0, 0);
+  },
 };
 </script>
 

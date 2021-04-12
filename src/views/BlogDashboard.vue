@@ -1,6 +1,6 @@
 <template>
   <section id="blog-dashboard">
-    <div class="section-heading">
+    <div class="section-heading container-fluid">
       <p>Dashboard</p>
       <h2>Personal Blog</h2>
     </div>
@@ -54,7 +54,7 @@
                     :date-format-options="{
                       year: 'numeric',
                       month: 'short',
-                      day: 'numeric'
+                      day: 'numeric',
                     }"
                   ></b-form-datepicker>
                 </li>
@@ -66,7 +66,7 @@
                     :date-format-options="{
                       year: 'numeric',
                       month: 'short',
-                      day: 'numeric'
+                      day: 'numeric',
                     }"
                   ></b-form-datepicker>
                 </li>
@@ -302,14 +302,14 @@ export default {
   name: "BlogDashboard",
   components: {
     LineChart,
-    PieChart
+    PieChart,
   },
   filters: {
-    uppercase: function(value) {
+    uppercase: function (value) {
       if (!value) return "";
       value = value.toString();
       return value.toUpperCase();
-    }
+    },
   },
   created() {
     window.scrollTo(0, 0);
@@ -322,36 +322,36 @@ export default {
           value: "2,901",
           percentage: "4.9%",
           direction: "up",
-          points: [3, 5, 2, 7, 9]
+          points: [3, 5, 2, 7, 9],
         },
         {
           name: "pages",
           value: "98",
           percentage: "13.7",
           direction: "up",
-          points: [2, 1, 5, 4, 7, 8]
+          points: [2, 1, 5, 4, 7, 8],
         },
         {
           name: "comments",
           value: "5,194",
           percentage: "2.01%",
           direction: "down",
-          points: [3, 5, 8, 5, 1]
+          points: [3, 5, 8, 5, 1],
         },
         {
           name: "new customers",
           value: "11",
           percentage: "2.95%",
           direction: "down",
-          points: [7, 3, 5, 1, 2]
+          points: [7, 3, 5, 1, 2],
         },
         {
           name: "subscribers",
           value: "20,500",
           percentage: "1.02%",
           direction: "up",
-          points: [1, 3, 2, 7, 9]
-        }
+          points: [1, 3, 2, 7, 9],
+        },
       ],
       selected: null,
       options: [
@@ -359,7 +359,7 @@ export default {
         { value: "a", text: "Last Week" },
         { value: "b", text: "Today" },
         { value: { C: "3PO" }, text: "Last Month" },
-        { value: "d", text: "Last Year", disabled: true }
+        { value: "d", text: "Last Year", disabled: true },
       ],
       pickedDate: {},
       lineData: {
@@ -368,32 +368,32 @@ export default {
             data: [50, 100, 70, 30, 40, 110, 60, 70, 120, 130],
             backgroundColor: "transparent",
             borderColor: "#007bffb0",
-            label: "Current Month"
+            label: "Current Month",
           },
           {
             data: [15, 10, 15, 20, 10, 25, 15, 20, 60, 10],
             backgroundColor: "transparent",
             borderColor: "#dc3545a1",
-            label: "Last Month"
-          }
+            label: "Last Month",
+          },
         ],
-        labels: ["1", "7", "14", "21", "28", "5", "12", "19", "26", "2"]
+        labels: ["1", "7", "14", "21", "28", "5", "12", "19", "26", "2"],
       },
       lineOptions: {},
       pieData: {
         datasets: [
           {
             data: [60, 10, 30],
-            backgroundColor: ["#007bff", "#007bff6b", "#007bffb0"]
-          }
+            backgroundColor: ["#007bff", "#007bff6b", "#007bffb0"],
+          },
         ],
-        labels: ["Desktop", "Tablet", "Mobile"]
+        labels: ["Desktop", "Tablet", "Mobile"],
       },
       pieOptions: {},
-      draft: {}
+      draft: {},
     };
   },
-  mounted() {}
+  mounted() {},
 };
 </script>
 
@@ -550,6 +550,16 @@ export default {
         }
       }
     }
+  }
+}
+@media (max-width: 576px) {
+  #blog-dashboard
+    .container-fluid
+    > .row:nth-child(2)
+    > *:first-child
+    .card
+    .card-body {
+    display: none;
   }
 }
 </style>

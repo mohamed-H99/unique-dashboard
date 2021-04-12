@@ -70,8 +70,9 @@
 </template>
 
 <script>
+/* eslint-disable */
 export default {
-  name: "Sidebar"
+  name: "Sidebar",
 };
 </script>
 
@@ -165,6 +166,14 @@ export default {
         color: var(--main-color);
       }
     }
+  }
+}
+
+@media (max-width: 768px) {
+  #sidebar.minimized {
+    min-width: 0;
+    max-width: 0;
+    overflow: hidden;
   }
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <section id="components">
-    <div class="section-heading">
+    <div class="section-heading container-fluid">
       <p>Overview</p>
       <h2>Components</h2>
     </div>
@@ -23,14 +23,14 @@ export default {
   },
   data() {
     return {
-      errorNum: 500
+      errorNum: 500,
     };
   },
   methods: {
     goBack() {
       window.history.back();
-    }
-  }
+    },
+  },
 };
 </script>
 
